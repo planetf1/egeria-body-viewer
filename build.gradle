@@ -1,0 +1,23 @@
+/*
+ * SPDX-License-Identifier: Apache-2.0
+ * Copyright Contributors to the ODPi Egeria project.
+ */
+apply plugin: 'application'
+apply plugin: 'java'
+apply plugin: 'idea'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.odpi.egeria:data-manager-api:3.10"
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.3'
+}
+
+application {
+    mainClass = 'json4me.ShowConnection'
+}
+
+description = 'Simple test code'
